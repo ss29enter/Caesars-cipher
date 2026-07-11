@@ -1,5 +1,5 @@
-from text_encryption import encipher
-import utils
+from text_encryption import encypher
+import utils 
 
 def main():
     act = utils.determine_operation()
@@ -7,9 +7,9 @@ def main():
     step = utils.enter_step()
     text = utils.enter_text()
     if act == 'cod':
-        print(f'> Your coded message: {encipher(text,lang,step,act)}')
+        print(f'> Your encrypted message: {encypher(text,lang,step,act)}')
     else:
-        print(f'> Your decoded message: {encipher(text,lang,step,act)}')
+        print(f'> Your decrypted message: {encypher(text,lang,step,act)}')
     print()
 
     repeat = utils.ask_to_repeat()

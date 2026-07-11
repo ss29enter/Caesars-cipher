@@ -1,7 +1,7 @@
 name = input('Your username: ')
 
 def determine_operation():
-    option = input('Do you wanna coding or decoding text? [cod/decod]: ').lower()
+    option = input('Do you want to encode or decode text? [cod/decod]: ').lower()
     if option in ['c','cod','coding']: return 'cod'
     elif option in ['d','decod','decoding']: return 'decod'
     else: 
@@ -30,9 +30,9 @@ def say_hello():
     print(f'Hi, {name} =)', 'I can code or decode text based on the Caesar cipher.',sep='\n')
 
 def ask_to_repeat():
-    answer = input('Do you wanna repeat? [yes/no]: ').lower()
+    answer = input('Do you want to repeat? [yes/no]: ').lower()
     if answer in ['y','yes']: return 'yes'
-    elif answer in ['n','no','nope']: return 'no'
+    elif answer in ['n','no']: return 'no'
     else:
         print('Try again!')
         return ask_to_repeat()

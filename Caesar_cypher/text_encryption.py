@@ -3,7 +3,7 @@ eng_upper_alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 rus_lower_alphabet = "абвгдежзийклмнопрстуфхцчшщъыьэюя"
 rus_upper_alphabet = "АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
 
-def encipher(text,language,step,act):
+def encypher(text,language,step,act):
     res, curr = [],''
     if language == 'rus':
         dict_lower = rus_lower_alphabet
